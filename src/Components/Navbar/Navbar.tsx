@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { navLinks } from "./links";
 import Logo from "@/assets/logo.png";
-// import '../../styles/globals.css'
+import '../../styles/style.css'
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
