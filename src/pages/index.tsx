@@ -1,6 +1,4 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
+// import '../styles/globals.css'
 import Navbar from '@/Components/Navbar/Navbar'
 import { Colorful } from '@/Components/Colourful'
 
