@@ -1,6 +1,3 @@
-// import '../styles/globals.css'
-import '../styles/style.css'
-
 export const Colorful =() => {
   return (
       <div className="z-[-100]">

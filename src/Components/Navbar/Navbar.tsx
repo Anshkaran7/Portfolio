@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { navLinks } from "./links";
-import Logo from "@/assets/logo.png";
-import '../../styles/style.css'
+
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -23,8 +22,10 @@ const Navbar = () => {
         {/* logo */}
         <div className="items-center flex flex-row justify-center">
           <Image
-            src={Logo}
+            src={"/assets/logo.png"}
             alt="logo"
+            width={50}
+            height={50}
             className="image w-16 h-16  hover:scale-125 cursor-pointer"
           />
           {/* logo text */}
