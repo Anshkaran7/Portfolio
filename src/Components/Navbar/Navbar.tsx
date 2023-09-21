@@ -26,7 +26,7 @@ const Navbar = () => {
             alt="logo"
             width={50}
             height={50}
-            className="image w-16 h-16  hover:scale-125 cursor-pointer"
+            className="image w-16 h-16  hover:scale-110 cursor-pointer"
           />
           {/* logo text */}
           <a
@@ -36,17 +36,17 @@ const Navbar = () => {
               window.scroll(0, 0);
             }}
           >
-            Karan<span className="font-bold text-yellow-400">.Dev</span>
+            Karan<span className="font-bold text-pink-400">.Dev</span>
           </a>
         </div>
         {/*desktop view -- nav elements  */}
-        <ul className="flex gap-6 max-sm:hidden">
+        <ul className="flex gap-6 max-sm:hidden ">
           {navLinks.map((navlink) => {
             const { title, url } = navlink;
             return (
               <li className="flex  items-center  ">
                 <a
-                  className="py-1 px-3 pb-[6px] items-center justify-center rounded text-white hover:text-yellow-400 dark:hover:bg-neutral-700/20 font-semibold"
+                  className="py-1 px-3 pb-[6px] items-center justify-center rounded text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold"
                   href={url}
                 >
                   {title}
@@ -57,7 +57,7 @@ const Navbar = () => {
         </ul>
 
         {/* for mobile view--- toogle icon */}
-        <div className="flex flex-col sm:hidden">
+        <div className="flex flex-col sm:hidden ">
           <button
             onClick={toggleMenu}
             className={`nav-menu ${isMenu ? "close" : "open"}`}
@@ -65,7 +65,7 @@ const Navbar = () => {
           ></button>
 
           {/* for mobile view--- nav elements */}
-          <div className={isMenu ? 'mobile-menu active bg-yellow-600' : 'mobile-menu inactive bg-yellow-600'}>
+          <div className={isMenu ? 'mobile-menu active bg-pink-600' : 'mobile-menu inactive bg-pink-600'}>
             <div className="mobile-links">
               {navLinks.map((navlink) => {
                 const { title, url } = navlink;
