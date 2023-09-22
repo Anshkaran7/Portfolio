@@ -65,7 +65,7 @@ const Navbar = () => {
           ></button>
 
           {/* for mobile view--- nav elements */}
-          <div className={isMenu ? 'mobile-menu active bg-pink-600' : 'mobile-menu inactive bg-pink-600'}>
+          <div className={isMenu ? 'mobile-menu active bg-pink-500' : 'mobile-menu inactive bg-pink-500'}>
             <div className="mobile-links">
               {navLinks.map((navlink) => {
                 const { title, url } = navlink;

@@ -10,7 +10,7 @@ const SideMail = () => {
             }}
         >
             <div>
-                <a href="mailto:karanchandravanshi217@gmail.com" className="text-white">
+                <a href="mailto:karanchandravanshi217@gmail.com" className="text-white hover:text-pink-400 duration-300">
                     karanchandravanshi217@gmail.com
                 </a>
             </div>
