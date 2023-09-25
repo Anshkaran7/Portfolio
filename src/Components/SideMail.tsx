@@ -10,11 +10,11 @@ const SideMail = () => {
             }}
         >
             <div>
-                <a href="mailto:karanchandravanshi217@gmail.com" className="text-white hover:text-pink-400 duration-300">
+                <a href="mailto:karanchandravanshi217@gmail.com" className=" dark:text-gray-700 text-white hover:text-pink-400 duration-300">
                     karanchandravanshi217@gmail.com
                 </a>
             </div>
-            <div className="w-32 h-[1px] mt-1 bg-white"></div>
+            <div className="w-32 h-[1px] mt-1 dark:bg-gray-700 bg-white"></div>
         </div>
     );
 };

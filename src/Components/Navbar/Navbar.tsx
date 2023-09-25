@@ -1,17 +1,20 @@
 import Image from "next/image";
 import { navLinks } from "./links";
-
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 import { useState } from "react";
+import DarkModeToggle from "../Togglebutton";
 
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   const toggleMenu = () => {
     setIsMenu(!isMenu);
+  };
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
@@ -31,7 +34,7 @@ const Navbar = () => {
           {/* logo text */}
           <a
             href="#"
-            className="text-xl font-medium mt-3 ml-2 text-white hover:rotate-6"
+            className="text-xl font-semibold mt-3 ml-2 text-white hover:rotate-6 dark:text-gray-700"
             onClick={() => {
               window.scroll(0, 0);
             }}
@@ -39,28 +42,36 @@ const Navbar = () => {
             Karan<span className="font-bold text-pink-400">.Dev</span>
           </a>
         </div>
+
         {/*desktop view -- nav elements  */}
-        <ul className="flex gap-6 max-sm:hidden ">
-          {navLinks.map((navlink) => {
-            const { title, url } = navlink;
-            return (
-              <li className="flex  items-center  ">
-                <a
-                  className="py-1 px-3 pb-[6px] items-center justify-center rounded text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold"
-                  href={url}
-                >
-                  {title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="flex flex-row items-center gap-x-6">
+          <ul className="flex gap-6 max-sm:hidden ">
+            {navLinks.map((navlink) => {
+              const { title, url } = navlink;
+              return (
+                <li className="flex  items-center  ">
+                  <a
+                    className="py-1 px-3 pb-[6px] items-center justify-center rounded dark:text-pink-600 text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold"
+                    href={url}
+                  >
+                    {title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+
+          <DarkModeToggle />
+
+        </div>
+
+
 
         {/* for mobile view--- toogle icon */}
-        <div className="flex flex-col sm:hidden ">
+        <div className="flex flex-col sm:hidden  ">
           <button
             onClick={toggleMenu}
-            className={`nav-menu ${isMenu ? "close" : "open"}`}
+            className={`nav-menu dark:bg-gray-700 dark:before:bg-black dark:after:bg-black ${isMenu ? "close" : "open"}`}
             aria-label="nav-menu-btn"
           ></button>
 
@@ -75,6 +86,8 @@ const Navbar = () => {
                   </a>
                 );
               })}
+
+
             </div>
 
             <ul className="wrapper flex list-none">

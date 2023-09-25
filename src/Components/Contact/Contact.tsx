@@ -51,18 +51,17 @@ const publicKey='smqYZrfsXfFCsp4MP'
       <SnackbarProvider maxSnack={3}>
       <section className="h-screen w-full pb-6 pt-24" id="contact">
         <div className="flex items-center gap-x-4">
-          <h2 className="flex items-center gap-x-2 text-2xl font-bold text-neutral-900 dark:text-white">
-            <span className="rounded bg-white/20 text-pink-400 backdrop-blur dark:bg-neutral-900/20">02.</span>Contact me
-          </h2>
-          <div className="relative top-[2px] h-[1px] flex-grow animate-bounce bg-neutral-950/10 dark:bg-white/20"></div>
+          <h2 className="flex items-center gap-x-2 text-2xl font-bold dark:text-gray-700 text-white">
+          <span className="rounded  text-pink-500 backdrop-blur ">02.</span>Contact Me</h2>
+          <div className="relative top-[2px] h-[1px] flex-grow animate-bounce  dark:bg-neutral-950/10 bg-white/20"></div>
         </div>
-        <div className="grid gap-6 text-white pt-12 text-center">
+        <div className="grid gap-6 dark:text-gray-700 text-white pt-12 text-center">
           <h3 className="text-3xl sm:text-4xl">Get in touch with me</h3>
           <p className="text-center">
             Want to talk about your project ?<br />Just fill out the form below and I’ll get back to you as soon as I can.
           </p>
         </div>
-        <form onSubmit={sendEmail}  className="mx-auto mt-12 flex rounded-lg text-white flex-col gap-x-6 gap-y-4  bg-white/30 p-6 outline outline-1 outline-neutral-500/30 backdrop-blur  dark:bg-neutral-900/70 dark:outline-neutral-200/10 md:w-full">
+        <form onSubmit={sendEmail}  className="mx-auto mt-12 flex rounded-lg dark:text-gray-700 dark:border-[1px] dark:border-pink-300 text-white flex-col gap-x-6 gap-y-4  dark:bg-white/70 p-6 outline outline-1 outline-neutral-500/30 backdrop-blur  bg-neutral-900/70 dark:outline-neutral-200/10 md:w-full">
           <div className="grid w-full gap-6 md:grid-cols-2">
             <div className="flex w-full flex-col gap-y-2">
               <label className="indent-1 font-medium" htmlFor="name">
@@ -70,7 +69,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
               </label>
               <input
                 id="name"
-                className="w-full rounded-md border-0 bg-transparent p-2.5 ring-1 ring-neutral-500/40 transition-all focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:dark:bg-neutral-900/70"
+                className="w-full rounded-md border-0 bg-transparent p-2.5 ring-1 ring-neutral-500/40 transition-all dark:focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:bg-neutral-900/70"
                 placeholder=""
                 type="text"
                 required
@@ -84,7 +83,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
               </label>
               <input
                 id="email"
-                className="w-full rounded-md border-0 bg-transparent p-2.5 ring-1 ring-neutral-500/40 transition-all focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:dark:bg-neutral-900/70"
+                className="w-full rounded-md border-0 bg-transparent p-2.5 ring-1 ring-neutral-500/40 transition-all dark:focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:bg-neutral-900/70"
                 type="email"
                 required
                 value={email}
@@ -101,7 +100,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
             </label>
             <textarea
               id="messsage"
-              className="f peer rounded-md h-[13.3rem] border-0 bg-transparent p-2.5 leading-7 tracking-wider ring-1 ring-neutral-500/40 focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:dark:bg-neutral-900/70"
+              className="f peer rounded-md h-[13.3rem] border-0 bg-transparent p-2.5 leading-7 tracking-wider ring-1 ring-neutral-500/40 dark:focus:bg-white/60 focus:ring-pink-400 focus:outline-none focus:bg-neutral-900/70"
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -115,7 +114,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
         </form>
         <div className='flex justify-center items-center my-10'>
 
-        <p className='text-white font-medium'>© 2023 - Karan Kumar</p>
+        <p className='text-white dark:text-gray-700 font-medium'>© 2023 - Karan Kumar</p>
         </div>
       </section>
       </SnackbarProvider>

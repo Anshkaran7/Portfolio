@@ -8,9 +8,9 @@ import Label from '../Label';
 const Profile: React.FC = () => {
     return (
         <section className='relative py-12 '>
-            <div className="flex items-center gap-x-4"><h2 className="flex items-center gap-x-2 text-2xl font-bold text-neutral-900 dark:text-white">
-                <span className="rounded bg-white/20 text-pink-500 backdrop-blur dark:bg-neutral-900/20">01.</span>About Me</h2>
-                <div className="relative top-[2px] h-[1px] flex-grow animate-bounce bg-neutral-950/10 dark:bg-white/20"></div>
+            <div className="flex items-center gap-x-4"><h2 className="flex items-center gap-x-2 text-2xl font-bold text-white dark:text-gray-700 ">
+                <span className="rounded  text-pink-500 backdrop-blur ">01.</span>About Me</h2>
+                <div className="relative top-[2px] h-[1px] flex-grow animate-bounce  dark:bg-neutral-950/10 bg-white/20"></div>
             </div>
 
             <div className="fade-in flex w-full flex-col items-center  justify-between lg:flex-row lg:items-start lg:gap-x-8 text-white">
@@ -27,7 +27,7 @@ const Profile: React.FC = () => {
                         src="/assets/Me.jpg"
                     />
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 dark:text-gray-800 ">
                     <h4 className="mb-6 text-xl">Short-Bio:</h4>
                     <p className="lg:w-[80%] ">
                         Hi, I'm Karan Kumar, a Full Stack Developer from India. I specialize in frontend development and have been in the field for 6-7 months.                        <br />
@@ -44,15 +44,11 @@ const Profile: React.FC = () => {
                             {/* Add language items here */}
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
-                                <p className="text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 dark:text-white/70 dark:group-hover:text-white">
-                                    C++
-                                </p>
+                                <Label label={"C++"} />
                             </div>
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
-                                <p className="text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 dark:text-white/70 dark:group-hover:text-white">
-                                    JavaScript
-                                </p>
+                               <Label label={"JavaScript"} />
                             </div>
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
@@ -74,9 +70,7 @@ const Profile: React.FC = () => {
 
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
-                                <p className="text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 dark:text-white/70 dark:group-hover:text-white">
-                                    NextJS
-                                </p>
+                               <Label label={"NextJS"} />
                             </div>
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
@@ -120,7 +114,7 @@ const Profile: React.FC = () => {
                             </div>
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
-                                <p className="text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 dark:text-white/70 dark:group-hover:text-white">
+                                <p className="dark:text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 text-white/70 dark:group-hover:text-white">
                                     Express Js
                                 </p>
                             </div>
