@@ -4,24 +4,25 @@ import Intro from '@/Components/Intro'
 import SideMail from '@/Components/SideMail'
 import { Social } from '@/Components/Social'
 import About from '@/Components/About/About'
+import Contact from '@/Components/Contact/Contact'
 
 export default function App() {
   return (
     <>
       <Navbar />
       <main>
-        <div className=' mx-8 md:mx-44'>
-        <Intro />
-        <About/>
-
+        <div className=' mx-8 md:mx-44 mb-20'>
+          <Intro />
+          <About />
+          <Contact />
         </div>
-        
+
       </main>
       <div>
-        <Social/>
-        <SideMail/>
+        <Social />
+        <SideMail />
       </div>
-      
+
       <div className='blurred'></div>
       <Colorful />
     </>

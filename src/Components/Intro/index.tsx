@@ -17,7 +17,7 @@ const Intro = () => {
               <span className="text-pink-600 transition  duration-300 group-hover:translate-x-6">/&gt;</span>
             </span>
             <p className="job text-white text-2xl md:text-5xl font-bold transition duration-200">
-              I'm a Software Engineer
+              I'm a Software Developer
             </p>
             <p className="intro text-sm md:text-lg text-pink-400 filter invert-200 leading-loose">
               I Design & Develop Accessible, Elegant Apps using modern tech stacks.
