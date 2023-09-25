@@ -17,12 +17,8 @@ const DarkModeToggle: React.FC = () => {
     // Update the body background color when dark mode is toggled
     if (!isDarkMode) {
       document.body.style.backgroundColor = 'white';
-      document.querySelector('nav').style.backgroundColor = 'white';
-      document.querySelector('nav').style.backdropFilter = 'none';
     } else {
       document.body.style.backgroundColor = 'rgb(var(--black))';
-      document.querySelector('nav').style.backgroundColor = 'rgb(var(--black), 0.6)';
-      document.querySelector('nav').style.backdropFilter = 'blur(4px)';
     }
   }, [isDarkMode]);
 

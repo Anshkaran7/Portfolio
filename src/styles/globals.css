@@ -139,7 +139,7 @@ main{
 nav {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  background-color: rgb(var(--black), 0.6);
+  /* background-color: rgb(var(--black), 0.6); */
 }
 
 nav a {
