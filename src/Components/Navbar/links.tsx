@@ -4,8 +4,8 @@ export const navLinks = [
     url: "About"
     },
     {
-    title: "Work",
-    url: "Work"
+    title: "Experience",
+    url: "Experience"
     },
     {
     title: "Contact",

@@ -5,6 +5,7 @@ import SideMail from '@/Components/SideMail'
 import { Social } from '@/Components/Social'
 import About from '@/Components/About/About'
 import Contact from '@/Components/Contact/Contact'
+import Experience from '@/Components/Experience/Experience'
 
 export default function App() {
   return (
@@ -14,7 +15,9 @@ export default function App() {
         <div className=' mx-8 md:mx-44 mb-20'>
           <Intro />
           <About />
+          <Experience/>
           <Contact />
+
         </div>
 
       </main>

@@ -52,7 +52,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
       <section className="h-screen w-full pb-6 pt-24" id="contact">
         <div className="flex items-center gap-x-4">
           <h2 className="flex items-center gap-x-2 text-2xl font-bold dark:text-gray-700 text-white">
-          <span className="rounded  text-pink-500 backdrop-blur ">02.</span>Contact Me</h2>
+          <span className="rounded  text-pink-500 backdrop-blur ">03.</span>Contact Me</h2>
           <div className="relative top-[2px] h-[1px] flex-grow animate-bounce  dark:bg-neutral-950/10 bg-white/20"></div>
         </div>
         <div className="grid gap-6 dark:text-gray-700 text-white pt-12 text-center">

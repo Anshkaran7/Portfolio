@@ -4,6 +4,7 @@ import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import DarkModeToggle from "../Togglebutton";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -20,10 +21,10 @@ const Navbar = () => {
   return (
     // main
     <nav className="sticky w-[100%] top-0 left-0 z-[99] bg-opacity-40  py-2 px-0">
-
       <div className="my-0 mx-auto w-[90%] flex justify-between">
         {/* logo */}
         <div className="items-center flex flex-row justify-center">
+          <Link href="/">
           <Image
             src={"/assets/logo.png"}
             alt="logo"
@@ -31,43 +32,35 @@ const Navbar = () => {
             height={50}
             className="image w-16 h-16  hover:scale-110 cursor-pointer"
           />
-          {/* logo text */}
-          <a
-            href="#"
-            className="text-xl font-semibold mt-3 ml-2 text-white hover:rotate-6 dark:text-gray-700"
-            onClick={() => {
-              window.scroll(0, 0);
-            }}
-          >
-            Karan<span className="font-bold text-pink-400">.Dev</span>
-          </a>
+          </Link>
+          <Link href="/">
+            <span className="text-xl font-semibold mt-3 ml-2 text-white hover:rotate-6 dark:text-gray-700">
+              Karan<span className="font-bold text-pink-400">.Dev</span>
+            </span>
+          </Link>
         </div>
 
-        {/*desktop view -- nav elements  */}
+        {/* desktop view -- nav elements */}
         <div className="flex flex-row items-center gap-x-6">
           <ul className="flex gap-6 max-sm:hidden ">
             {navLinks.map((navlink) => {
               const { title, url } = navlink;
               return (
-                <li className="flex  items-center  ">
-                  <a
-                    className="py-1 px-3 pb-[6px] items-center justify-center rounded dark:text-pink-600 text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold"
-                    href={url}
-                  >
-                    {title}
-                  </a>
+                <li className="flex  items-center  " key={url}>
+                  <Link href={`#${url.toLowerCase()}`}>
+                    <span className="py-1 px-3 pb-[6px] items-center justify-center rounded dark:text-pink-600 text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold">
+                      {title}
+                    </span>
+                  </Link>
                 </li>
               );
             })}
           </ul>
 
           <DarkModeToggle />
-
         </div>
 
-
-
-        {/* for mobile view--- toogle icon */}
+        {/* for mobile view--- toggle icon */}
         <div className="flex flex-col sm:hidden  ">
           <button
             onClick={toggleMenu}
@@ -81,15 +74,17 @@ const Navbar = () => {
               {navLinks.map((navlink) => {
                 const { title, url } = navlink;
                 return (
-                  <a className="text-white hover:text-black font-semibold" onClick={toggleMenu} href={url}>
-                    {title}
-                  </a>
+                  <Link key={url} href={`#${url.toLowerCase()}`}>
+                    <span
+                      className="text-white hover:text-black font-semibold"
+                      onClick={toggleMenu}
+                    >
+                      {title}
+                    </span>
+                  </Link>
                 );
               })}
-
-
             </div>
-
             <ul className="wrapper flex list-none">
               <li className="icon linkedin">
                 <a href="https://www.linkedin.com/in/karan-kumar-416321239/" target="_blank" rel="noopener noreferrer">
