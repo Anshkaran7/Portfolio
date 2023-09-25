@@ -62,7 +62,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
             Want to talk about your project ?<br />Just fill out the form below and I’ll get back to you as soon as I can.
           </p>
         </div>
-        <form  ref={form} onSubmit={sendEmail}  className="mx-auto mt-12 flex rounded-lg text-white flex-col gap-x-6 gap-y-4  bg-white/30 p-6 outline outline-1 outline-neutral-500/30 backdrop-blur  dark:bg-neutral-900/70 dark:outline-neutral-200/10 md:w-full">
+        <form onSubmit={sendEmail}  className="mx-auto mt-12 flex rounded-lg text-white flex-col gap-x-6 gap-y-4  bg-white/30 p-6 outline outline-1 outline-neutral-500/30 backdrop-blur  dark:bg-neutral-900/70 dark:outline-neutral-200/10 md:w-full">
           <div className="grid w-full gap-6 md:grid-cols-2">
             <div className="flex w-full flex-col gap-y-2">
               <label className="indent-1 font-medium" htmlFor="name">
