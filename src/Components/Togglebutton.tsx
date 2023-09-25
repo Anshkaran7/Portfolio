@@ -7,9 +7,8 @@ const DarkModeToggle: React.FC = () => {
   const toggleDarkMode = () => {
     // Toggle the dark mode state
     setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark', isDarkMode); // Toggle the 'dark' class on the body element
-    // You can also add code to toggle your app's dark mode styles here
-    // For example, you can update CSS classes on the body or HTML element
+    document.body.classList.toggle('dark', isDarkMode);
+    
   };
 
 
