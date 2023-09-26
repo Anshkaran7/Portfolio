@@ -9,7 +9,7 @@ interface Props {
 
 export default function ExperienceCard({ title, position, date, tasks }: Props) {
   return (
-    <div className="card rounded bg-neutral-900/70 dark:bg-white/70 shadow-md dark:shadow-md  w-full p-6 dark:text-gray-700 text-white backdrop-blur before:rounded">
+        <div className="card rounded bg-neutral-900/70 dark:bg-white/70 shadow-md dark:shadow-md  w-full p-6 dark:text-gray-700 text-white backdrop-blur before:rounded">
       <h4 className="mb-4 flex items-center text-xl font-semibold gap-x-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

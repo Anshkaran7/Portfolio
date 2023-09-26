@@ -26,12 +26,12 @@ const Intro = () => {
           <div className='flex flex-col'>
 
             <div className="bottom mt-16  ">
-              <a href="#Contact">
+              <a href="#contact">
                 <button className=" mr-4 contact font-semibold hover:text-pink-600 border border-pink-600  hover:border-pink-600 hover:bg-transparent duration-500 text-main bg-pink-600 text-white px-6 py-2 rounded-md" aria-label="contact-btn">
                   Get in touch
                 </button>
               </a>
-              <a href="#Work">
+              <a href="#experience">
                 <button className="work dark:bg-neutral-700/20 dark:hover:bg-pink-600/20 dark:text-gray-700 text-white dark:hover:text-pink-500 font-semibold hover:text-pink-500 duration-500 hover:bg-pink-500 hover:bg-opacity-10 border-transparent border-[1px] px-6 py-2 rounded-md" aria-label="work-btn">
                   See my work
                 </button>
