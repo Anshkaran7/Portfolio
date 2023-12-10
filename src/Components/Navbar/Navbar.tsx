@@ -48,7 +48,7 @@ const Navbar = () => {
               return (
                 <li className="flex  items-center  " key={url}>
                   <Link href={`#${url.toLowerCase()}`}>
-                    <span className="py-1 px-3 pb-[6px] items-center justify-center rounded dark:text-pink-600 text-white hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold">
+                    <span className="py-1 px-3 pb-[6px] items-center justify-center rounded dark:text-pink-600 text-white  hover:text-pink-500 dark:hover:bg-neutral-700/20 font-semibold">
                       {title}
                     </span>
                   </Link>
