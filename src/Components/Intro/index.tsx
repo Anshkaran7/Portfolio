@@ -1,6 +1,7 @@
 // components/Intro.js
 import Image from 'next/image';
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import Typical from 'react-typical';
 
 const Intro = () => {
@@ -21,16 +22,17 @@ const Intro = () => {
             <div className='flex flex-row gap-x-2 items-center text-white dark:text-gray-700 text-2xl md:text-5xl font-bold'>
             <p className="job text-white dark:text-gray-700 text-2xl md:text-5xl font-bold transition duration-200">
             I'm a {' '} </p>
-            <Typical
-                steps={[
-                  'Web Developer',
-                  2000,
-                  'React Native Developer',
-                  2000,
-                ]}
-                wrapper="p"
-                loop={Infinity}
-              />
+           
+              <Typewriter
+            words={['Web Developer', 'React Native Developer']}
+            loop={Infinity}
+            cursor
+            cursorStyle=''
+            typeSpeed={70}
+            deleteSpeed={100}
+            delaySpeed={1000}
+           
+          />
             </div>
             
              

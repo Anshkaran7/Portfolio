@@ -1,6 +1,6 @@
-import { enqueueSnackbar, SnackbarProvider  } from 'notistack';
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 
 const Contact = () => {
   const form = useRef();
@@ -47,8 +47,9 @@ const publicKey='smqYZrfsXfFCsp4MP'
   };
 
   return (
-    <div>
-      <SnackbarProvider maxSnack={3}>
+      
+      <div>
+        
       <section className="h-screen w-full pb-6 pt-24" id="contact">
         <div className="flex items-center gap-x-4">
           <h2 className="flex items-center gap-x-2 text-2xl font-bold dark:text-gray-700 text-white">
@@ -117,8 +118,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
         <p className='text-white dark:text-gray-700 font-medium'>© 2023 - Karan Kumar</p>
         </div>
       </section>
-      </SnackbarProvider>
-    </div>
+      </div>
   );
 };
 
