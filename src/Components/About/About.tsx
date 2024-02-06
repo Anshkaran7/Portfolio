@@ -147,9 +147,8 @@ const Profile: React.FC = () => {
                             </div>
                             <div className="group flex w-full items-center gap-x-1 p-1 text-pink-500">
                                 <Arrow />
-                                <p className="dark:text-neutral-900/80 transition hover:text-neutral-900 group-hover:translate-x-2 text-white/70 dark:group-hover:text-white">
-                                    Express Js
-                                </p>
+                                <Label label={"Express Js"} />
+
                             </div>
                         </div>
 

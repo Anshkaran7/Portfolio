@@ -1,8 +1,10 @@
 // components/Intro.js
 import Image from 'next/image';
 import React from 'react';
+import Typical from 'react-typical';
 
 const Intro = () => {
+  
   return (
     <section id="Intro" className="w-full min-h-[90vh] flex flex-col justify-center ">
       <div className="container flex justify-between">
@@ -16,10 +18,24 @@ const Intro = () => {
               Karan Kumar
               <span className="text-pink-600 transition  duration-300 group-hover:translate-x-6">/&gt;</span>
             </span>
+            <div className='flex flex-row gap-x-2 items-center text-white dark:text-gray-700 text-2xl md:text-5xl font-bold'>
             <p className="job text-white dark:text-gray-700 text-2xl md:text-5xl font-bold transition duration-200">
-              I'm a Software Developer
-            </p>
-            <p className="intro text-sm md:text-lg text-pink-600 mt-3 filter invert-200 leading-loose">
+            I'm a {' '} </p>
+            <Typical
+                steps={[
+                  'Web Developer',
+                  2000,
+                  'React Native Developer',
+                  2000,
+                ]}
+                wrapper="p"
+                loop={Infinity}
+              />
+            </div>
+            
+             
+            
+            <p className="intro text-sm md:text-lg text-pink-400 mt-3 filter invert-200 leading-loose">
               I Design & Develop Accessible, Elegant Apps using modern tech stacks.
             </p>
           </div>
