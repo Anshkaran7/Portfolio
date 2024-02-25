@@ -18,6 +18,8 @@
     "@types/node": "20.2.5",
     "@types/react": "^18.2.55",
     "@types/react-dom": "18.2.4",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "10.4.14",
     "next": "13.4.4",
     "notistack": "^3.0.1",
