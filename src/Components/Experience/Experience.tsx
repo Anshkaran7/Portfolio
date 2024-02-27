@@ -21,8 +21,8 @@ const tasks2 = [
 
 const Experience = () => {
     return (
-        <section id="experience" className="w-full min-h-[90vh] flex flex-col justify-center ">
-        <div className="flex items-center gap-x-4">
+        <section id="experience" className="w-full container mx-auto flex flex-col justify-center ">
+        <div className="flex items-center gap-x-4 mt-20 ">
                 <h2 className="flex items-center gap-x-2 text-2xl font-bold dark:text-gray-700 text-white">
                     <span className="rounded  text-pink-500 backdrop-blur ">02.</span>Experience</h2>
                 <div className="relative top-[2px] h-[1px] flex-grow animate-bounce  dark:bg-neutral-950/10 bg-white/20"></div>

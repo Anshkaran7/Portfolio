@@ -25,8 +25,8 @@ const Profile: React.FC = () => {
 
 
     return (
-        <section className='relative py-12 ' id='about'>
-            <div className="flex items-center gap-x-4"><h2 className="flex items-center gap-x-2 text-2xl font-bold text-white dark:text-gray-700 ">
+        <section className='relative py-12 container mx-auto ' id='about'>
+            <div className="flex items-center gap-x-4"><h2 className="flex  mt-20 items-center gap-x-2 text-2xl font-bold text-white dark:text-gray-700 ">
                 <span className="rounded  text-pink-500 backdrop-blur ">01.</span>About Me</h2>
                 <div className="relative top-[2px] h-[1px] flex-grow animate-bounce  dark:bg-neutral-950/10 bg-white/20"></div>
             </div>

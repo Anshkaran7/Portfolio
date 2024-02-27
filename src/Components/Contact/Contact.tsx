@@ -50,7 +50,7 @@ const publicKey='smqYZrfsXfFCsp4MP'
       
       <div>
         
-      <section className="h-screen w-full pb-6 pt-24" id="contact">
+      <section className="w-full pb-6 pt-24 container mx-auto" id="contact">
         <div className="flex items-center gap-x-4">
           <h2 className="flex items-center gap-x-2 text-2xl font-bold dark:text-gray-700 text-white">
           <span className="rounded  text-pink-500 backdrop-blur ">03.</span>Contact Me</h2>

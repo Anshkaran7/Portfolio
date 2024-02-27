@@ -8,7 +8,7 @@ const Intro = () => {
   
   return (
     <section id="Intro" className="w-full min-h-[90vh] flex flex-col justify-center ">
-      <div className="container flex justify-between">
+      <div className="container flex mx-auto justify-between">
         <div>
           <div className="head ">
             <p className="greeting text-white text-2xl  md:text-5xl font-semibold transition duration-200 dark:text-gray-700">
