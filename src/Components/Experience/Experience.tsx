@@ -3,7 +3,7 @@ import ExperienceCard from "../ExperienceCard";
 
 const title = "Medref Internship";
 const position = "Lead Frontend Developer for Web and App";
-const date = "15 May - Now";
+const date = "15 May - 20 Nov";
 const tasks = [
     "Worked on the Medref project at Healthbridge Solutions.",
     "Developed the frontend of the web and app using Next Js, Tailwind CSS and React Native respectively.",

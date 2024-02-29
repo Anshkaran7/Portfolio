@@ -51,7 +51,7 @@ const Profile: React.FC = () => {
                     <button
                         className="font-semibold hover:text-pink-600 border border-pink-600 hover:border-pink-600 hover:bg-transparent duration-500 text-main bg-pink-600 text-white py-2 w-44 rounded-md"
                         onClick={() => {
-                            window.open('https://drive.google.com/file/d/17ru8bRwO7wPnaJmhuP9U2fHPFmHdTpl9/view?usp=sharing', '_blank');
+                            window.open('https://drive.google.com/file/d/1mP9HIn2Zka-BLp7h__EAmWj20wUCBo_W/view?usp=sharing', '_blank');
                         }}
                     >
                         Resume
